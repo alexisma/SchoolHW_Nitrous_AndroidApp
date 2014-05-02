@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Update" >
+
+    <EditText
+        android:id="@+id/priceTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idTf"
+        android:layout_below="@+id/idTf"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nameTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idTf"
+        android:layout_below="@+id/priceTF"
+        android:ems="10"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/genreTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idTf"
+        android:layout_below="@+id/nameTF"
+        android:ems="10"
+        android:hint="Genre" />
+
+    <Button
+        android:id="@+id/updButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/genreTF"
+        android:layout_below="@+id/genreTF"
+        android:layout_marginTop="16dp"
+        android:onClick="update"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/updatedGameTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/genreTF"
+        android:layout_below="@+id/updButton"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/idTf"
+        android:layout_marginRight="23dp"
+        android:onClick="search"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/idTf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Search by ID"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
